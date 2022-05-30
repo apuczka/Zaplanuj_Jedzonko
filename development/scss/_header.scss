@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.header {
+  @include container();
+
+  font-family: $fontCharmonan;
+  font-size: 14px;
+  height: 6em;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $mainHeader_and_colorTextInColumns;
+  color: white;
+
+    .header__list {
+      display: flex;
+      font-family: $fontOpenSans;
+
+      .header__list--li {
+        padding: 10px;
+        list-style: none;
+
+
+
+
+        .header__list--li--a {
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase ;
+          &:hover {
+            color: #E58a20;
+          }
+
+        }
+      }
+
+    }
+}
+
+.header__logo--color {
+  color: #E58a20;
+}
+
+
