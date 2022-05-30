@@ -1,0 +1,37 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.CTA {
+  @include container();
+  font-family: $fontOpenSans;
+  font-size: 14px;
+  background: $mainHeader_and_colorTextInColumns;
+  width: 100vw;
+  height: 10em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+
+}
+.CTA__text {
+  margin: 20px 0;
+}
+
+.CTA__text__head {
+  padding: 1rem 0 ;
+}
+
+.CTA__text__text {
+}
+.CTA__button {
+  background-color: #E58a20;
+  color: white;
+  font-weight: bold;
+  margin: 1em;
+
+  border: 0;
+  padding: 10px 20px;
+}
