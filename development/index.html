@@ -6,34 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Zaplanuj Jedzonko</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <h1>ZaplanujJedzonko.pl</h1>
-    </header>
     <section>
       <!-- carousel -->
+      <div class="slideshow">
+        <div class="slideshow__images">
+          <img class="slideshow__images" id="image-1"src="./img/brooke-lark-nTZOILVZuOg-unsplash.jpg"alt="eat healthy part1"></img>
+          <img class="slideshow__images" id="image-2"src="./img/3637975.jpg"alt="eat healthy part2"></img>
+          <img class="slideshow__images" id="image-3"src="./img/ella-olsson-KPDbRyFOTnE-unsplash.jpg"alt="eat healthy part3"></img>
+        </div>
+        <div onclick="side_slide(-1)"class="slideshow__slide--left">
+          <span class="fa-solid fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)"class="slideshow__slide--right">
+          <span class="fa-solid fa-angle-right"></span>
+        </div>
+      </div>
     </section>
-    <section>
-      <!-- CTA + button -->
-    </section>
-    <section>
-      <!-- features -->
-    </section>
-    <section>
-      <!-- newsletter -->
-    </section>
-    <section>
-      <!-- aobut me -->
-    </section>
-    <section>
-      <!-- three columns -->
-    </section>
-    <footer>
-      <!-- copyright -->
-    </footer>
-
     <script src="./js/index.js"></script>
   </body>
 </html>
