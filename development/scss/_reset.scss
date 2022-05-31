@@ -1,9 +1,15 @@
+@import "variables";
+@import "mixins";
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
+html, body {
   font-size: 14px;
+  @include container();
+  font-family: $fontOpenSans;
 }

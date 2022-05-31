@@ -3,3 +3,10 @@
   margin: 0 auto;
   @content;
 }
+
+@mixin displayFlex($direction: normal, $content: normal, $items: normal) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  flex-direction: $direction;
+}
