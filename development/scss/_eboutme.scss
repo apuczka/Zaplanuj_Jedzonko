@@ -1,19 +1,19 @@
 .eboutme {
+   font-family: $fontOpenSans;
    width: 100%;
-   background:green;
    // .eboutme__portreit
    &__inner{
       margin: 0 auto;
-   background:darkgray;
+   background:$backgroundScreens;
    display: flex;
    justify-content: center;
-   padding: 2em;
+   padding: 3em;
    }
    &__portreit {
-      background:red;
+      background:$navigation_and_SecondPanel;
       height: 20em;
       width: 20em;
-      margin: 3em;
+      margin: 1em;
    }
    // .eboutme__description
    &__description {
@@ -25,11 +25,13 @@
    
    // .description__head
    &__head {
-      font-size: 3em;
+      font-weight: 500;
+         font-size: 3em;
+         margin-bottom: 0.5em;
    }
 
    // .description__text
    &__text {
-      font-size: 2em;
+      font-size: 1.5em;
    }
 }

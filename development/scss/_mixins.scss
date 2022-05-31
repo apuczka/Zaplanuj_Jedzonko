@@ -1,0 +1,5 @@
+@mixin container() {
+  max-width: $maxWidthFromProject;
+  margin: 0 auto;
+  @content;
+}
