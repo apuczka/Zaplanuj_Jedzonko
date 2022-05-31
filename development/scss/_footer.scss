@@ -1,0 +1,14 @@
+.footer {
+   font-family: $fontOpenSans;
+display: flex;
+justify-content: center;
+padding: 1em;
+background:$mainHeader_and_colorTextInColumns;
+color: $backgroundScreens;
+   // .footer__text
+   &__text {
+      span{
+         color: $buttons_and_favoritism_and_screenHeaders;
+      }
+}
+}

@@ -1,0 +1,95 @@
+.stopka {
+   font-family: $fontOpenSans;
+display: flex;
+justify-content: space-evenly;
+   // .stopka__columns
+padding: 3em;
+background-color:$navigation_and_SecondPanel;
+   &__columns {
+      width: 20em;
+   p {
+      font-size: 1.5em;
+      color:$backgroundScreens;
+   }
+   }
+}
+
+.columns {
+   
+   // .columns__head
+
+   &__head {
+      font-size:2em;
+      color: $backgroundScreens;
+      margin-bottom: 1em;
+   }
+
+   // .columns__list
+
+   &__list {
+      margin-left:1em;
+      font-size: 1.5em;
+      color: $backgroundScreens;
+   }
+
+   // .columns__input
+
+   &__input {
+      display: flex;
+      input{
+         border: none;
+         padding: .5em;
+         
+      }
+
+      button{
+         background-color:$buttons_and_favoritism_and_screenHeaders;
+         color: $backgroundScreens;
+         border:none;
+         padding: .5em;
+         cursor: pointer;
+      }
+   }
+
+   // .columns__icon
+
+   &__icon {
+      width:10em;
+      margin: 2em 0;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      .fa-facebook:before {
+            content: "\f09a";
+         color: $navigation_and_SecondPanel;
+         padding: 0.1em 0 0 0.2em;
+      }
+      .fa-twitter::before{
+         content: "\f099";
+         color: $navigation_and_SecondPanel;
+         
+      }
+      .fa-instagram::before{
+         content: "\f16d";
+         color: $backgroundScreens;
+         
+      }
+      .fa{
+         display: flex;
+         justify-content:center;
+         height:1em;
+         width: 1em;
+         font-size: 2em;
+         background-color: $backgroundScreens;
+         border-radius: .2em;
+         &:last-child{
+         background-color: $navigation_and_SecondPanel;
+         font-size:2.5em;
+         }
+      }
+      a{
+      text-decoration: none;
+      }
+   }
+}
+
