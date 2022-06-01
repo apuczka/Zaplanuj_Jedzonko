@@ -1,28 +1,28 @@
 {
-  "name": "onl_sfe_w_61_scrumlab",
+  "name": "fer_scrum_lab",
   "version": "1.0.0",
-  "description": "## Czym jest ScrumLab?",
-  "main": "gulpfile.js",
+  "description": "Front-End ScrumLab",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp sass"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodersLab/ONL_SFE_W_61_ScrumLab.git"
+    "url": "git+https://github.com/CodersLab-core/FER_SCRUM_LAB.git"
   },
-  "author": "",
+  "author": "Michał T",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodersLab/ONL_SFE_W_61_ScrumLab/issues"
+    "url": "https://github.com/CodersLab-core/FER_SCRUM_LAB/issues"
   },
-  "homepage": "https://github.com/CodersLab/ONL_SFE_W_61_ScrumLab#readme",
-  "keywords": [],
+  "homepage": "https://github.com/CodersLab-core/FER_SCRUM_LAB#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.52.1"
+    "sass": "^1.42.1"
   }
 }
