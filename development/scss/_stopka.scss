@@ -1,7 +1,9 @@
 .stopka {
-   font-family: $fontOpenSans;
+font-family: $fontOpenSans;
 display: flex;
+align-items: flex-start;
 justify-content: space-evenly;
+text-align:start;
    // .stopka__columns
 padding: 3em;
 background-color:$navigation_and_SecondPanel;
@@ -59,8 +61,8 @@ background-color:$navigation_and_SecondPanel;
       display: flex;
       justify-content:space-between;
       align-items: center;
-      .fa-facebook:before {
-            content: "\f09a";
+      .fa-facebook-f:before {
+            content: "\f39e";
          color: $navigation_and_SecondPanel;
          padding: 0.1em 0 0 0.2em;
       }
@@ -74,7 +76,7 @@ background-color:$navigation_and_SecondPanel;
          color: $backgroundScreens;
          
       }
-      .fa{
+      .fa-brands{
          display: flex;
          justify-content:center;
          height:1em;
