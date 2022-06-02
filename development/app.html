@@ -9,9 +9,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <h1>Hello App!</h1>
+    <header class="header">
+      <h1 class="header__logo">Zaplanuj <span class="header__logo--color">Jedzonko</span></h1>
+      <ul class="header__list">
+        <li class="header__list--li">
+          <div class="header__name">Imię</div>
+        </li>
+        <li class="header__list--li">
+          <i class="fa-solid fa-circle-user"></i>
+        </li>
+      </ul>
     </header>
+    <main class="main">
+      <div class="main__bar">
+        <div data-section="#desktop" class="main__bar--section">
+          Pulpit<i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div data-section="#regulations" class="main__bar--section">
+          Przepisy<i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div data-section="#plans" class="main__bar--section">
+          Plany<i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="main__main--section">
+        <div class="main--section" id="desktop">
+          <!-- to jest sekcja Pulpit -->
+        </div>
+        <div class="main--section" id="regulations">
+          <!-- to jest sekcja Przepisy -->
+        </div>
+        <div class="main--section" id="plans">
+          <!-- to jest sekcja Plans -->
+        </div>
+      </div>
+    </main>
 
     <script src="./js/app.js"></script>
   </body>

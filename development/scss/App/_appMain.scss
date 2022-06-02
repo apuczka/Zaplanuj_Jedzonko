@@ -1,0 +1,19 @@
+body{
+   margin: 0 auto;
+   height:100vh;
+   width: 100vw;
+}
+
+
+.header {
+   &__name {
+      font-size: 2em;
+   }
+.fa-solid {
+   color: $buttons_and_favoritism_and_screenHeaders
+}
+.fa-circle-user {
+   font-size:3em;
+}
+}
+
