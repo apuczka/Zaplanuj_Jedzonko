@@ -1,0 +1,34 @@
+.main--section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget--info {
+  border: 1px dot-dash blue;
+  display: flex;
+  justify-content: space-between;
+
+}
+.widget--remind {
+  display: flex;
+  justify-content: space-between;
+
+}
+.widget--check {
+  display: flex;
+  justify-content: space-between;
+
+}
+.fa-circle-info {
+  color: blue;
+}
+.fa-circle-exclamation {
+  color: orange;
+}
+.fa-circle-check {
+  color: darkgreen;
+}
+
+.main--section--widget--notyfication {
+  background: red;
+}
