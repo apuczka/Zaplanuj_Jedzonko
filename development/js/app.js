@@ -19,3 +19,20 @@ barSection.forEach(item => {
    });
 });
 document.querySelector('.main__bar--section').click();
+
+//exit widget info
+
+const exitButtons = document.querySelector('.fa-square-xmark');
+
+// exitButtons.addEventListener('click', () => {
+//    const widget = document.querySelector('.widget')
+//    widget.style.display ="none";
+// })
+
+exitButtons.forEach(button => {
+   button.addEventListener('click', () => {
+      const widgets = document.querySelector(".widget")
+    return  widgets.style.background = "red";
+   })
+
+})
