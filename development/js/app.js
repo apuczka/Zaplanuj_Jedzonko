@@ -25,13 +25,10 @@ document.querySelector('.main__bar--section').click();
 const exitButtons = document.querySelectorAll('.fa-square-xmark');
 
 exitButtons.forEach(button => {
-   button.addEventListener("click", () => {
-      const widgets = document.querySelectorAll(".widget")
-      widgets.forEach(widget => {
-         if(this.event){
-            widget.style.display = "none";
-         }
-      })
+   button.addEventListener("click", function () {
+      const widgets = document.querySelectorAll('.widget')
+      this.parentElement.style.display = 'none';
+
    })
 
 })
