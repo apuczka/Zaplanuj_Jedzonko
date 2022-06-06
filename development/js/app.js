@@ -19,3 +19,4 @@ barSection.forEach(item => {
    });
 });
 document.querySelector('.main__bar--section').click();
+
