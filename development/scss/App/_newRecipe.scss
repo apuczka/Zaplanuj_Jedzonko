@@ -1,0 +1,209 @@
+.new {
+		// .new__recipe
+
+		&__recipe {
+			color:$tableTrColor_and_iconColorFunc ;
+			height: 100%;
+			width: 100%;
+			background-color:$backgroundScreens;
+			border: .1em solid $tableTrColor_and_iconColorFunc;
+			padding: 3em;
+			max-height: 100vh;
+			overflow:hidden; 
+		}
+
+		// .new__head
+
+		&__head {
+			font-family: $fontOpenSans;
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			border-bottom: .2em solid $tableTrColor_and_iconColorFunc;
+			padding:0 0 .4em 0;
+
+		}
+
+		// .new__input--name
+
+		&__input--name {
+			display:flex;
+			margin: 1em 0 1em .5em;
+		}
+
+		// .new__input--decr
+
+		&__input--decr {
+			display: flex;
+			margin: 1em 0 2em .5em;
+		}
+
+		// .new__main
+
+		&__main {
+			display: flex;
+			justify-content:space-between;
+			margin: 2em .5em;
+		}
+
+		// .new__footer
+
+		&__footer {
+			display: flex;
+			justify-content:space-between;
+			margin: 2em 1.5em;
+		}
+}
+.head {
+
+		// .head__logo
+
+		&__logo {
+			font-size:1.75em;
+			color:$buttons_and_favoritism_and_screenHeaders;
+		}
+
+		// .head__button
+
+		&__button {
+			font-size:1.5em;
+			font-weight: 600;
+			background:$buttons_and_favoritism_and_screenHeaders;
+			color:$backgroundScreens;
+			padding: .3em 1em;
+			cursor: pointer;
+			border: none;
+
+		}
+		
+}
+.input--name {
+		// .input--name__name
+
+		&__name {
+			font-size: 1.5em;
+			width:8em;
+		}
+
+		// .input--name__input
+
+		&__input {
+			width:77%;
+			resize: none;
+			border: 1px solid $tableTrColor_and_iconColorFunc ;
+			outline: none;
+			padding: 0 .5em;
+		}
+}
+.input--decr {
+
+		// .input--decr__name
+
+		&__name {
+			font-size: 1.5em;
+			width: 8em;
+		}
+
+		// .input--decr__input
+
+		&__input {
+			font-size: 1em;
+			padding: 0 .5em;
+			line-height: 1.75em;
+			width: 77%;
+			resize: none;
+			border:1px solid $tableTrColor_and_iconColorFunc;
+			overflow: hidden;
+			outline: none;
+		}
+}
+.main {
+
+		// .main__instruction
+
+		&__instruction {
+			width: 49%;
+		}
+
+		// .main__title
+
+		&__title {
+			font-size: 1.5em;
+			border-bottom: .125em solid $tableTrColor_and_iconColorFunc ;
+			margin:.5em auto;
+		}
+
+		// .main__descr
+
+		&__descr {
+			display: flex;
+			justify-content:space-between;
+			align-items: flex-start;
+		}
+
+		// .main__text
+
+		&__text {
+			flex-grow: 1;
+			margin-right: .5em;
+			resize: none;
+			border: 1px solid $tableTrColor_and_iconColorFunc;
+			overflow: hidden;
+			outline: none;
+			font-size: 1em;
+			padding: 0 .5em;
+			line-height: 1.75em;
+		}
+
+		// .main__btn
+
+		&__btn {
+			border:none;
+			font-size:2em;
+			color:$messTypeSuccess;
+			cursor: pointer;
+		}
+
+		// .main__ingridients
+
+		&__ingridients {
+			width: 49%;
+		}
+}
+.footer {
+
+		// .footer__title
+
+		&__title {
+			width:47%;
+		}
+
+		// .footer__li
+
+		&__li {
+		}
+
+		// .footer__text
+
+		&__text {
+		}
+
+		// .footer__edit
+
+		&__edit {
+			border: none;
+			color:$messTypeWarning;
+			cursor: pointer;
+		}
+
+		// .footer__delete
+
+		&__delete {
+			border:none;
+			color: $buttons_and_favoritism_and_screenHeaders;
+			cursor: pointer;
+		}
+}
+.fa-square-plus {
+	font-size: 1.5em;
+}
