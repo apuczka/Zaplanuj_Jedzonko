@@ -1,0 +1,63 @@
+@import "../mixins";
+@import "../variables";
+
+.main--section__container {
+  background-color: #FFFFFA;
+  width: 1065px;
+  @include displayFlex(column);
+  border: 2px dotted #A1A194;
+  cursor: default;
+  &__table {
+    margin: 0 50px 30px 50px;
+    border-spacing: 0;
+
+    > caption {
+      padding: 15px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: $buttons_and_favoritism_and_screenHeaders;
+    }
+    tr {
+      > td, th {
+        padding: 7.5px 0;
+        border-top: 1px solid #A1A194;
+
+      }
+      > td {
+        color: $tableTrColor_and_iconColorFunc;
+        font-size: 24px;
+        max-width: 125px;
+
+      }
+      > th {
+        color: $mainHeader_and_colorTextInColumns;
+        font-size: 20px;
+        text-align: start;
+      }
+      &:last-of-type {
+        > td {
+          border-bottom: 1px solid #A1A194;
+        }
+      }
+    }
+  }
+
+  &__btnsCollection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    > button {
+      @include displayFlex(row, flex-start, center);
+      background-color: transparent;
+      color: $buttons_and_favoritism_and_screenHeaders;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+
+      > p {
+        padding: 0 5px;
+      }
+    }
+  }
+}
