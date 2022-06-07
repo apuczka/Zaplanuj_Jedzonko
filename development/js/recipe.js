@@ -11,3 +11,14 @@ function resize() {
    }, 1);
 };
 //------------------------------------------------------------------------
+
+
+//const addRecipe= document.querySelector('.app');
+//fetch('/app.html')
+//.then(res=>res.text())
+//.then(data=>{
+//    addRecipe.innerHTML=data
+//    const parser = new DOMParser()
+//    const doc = parser.parseFromString(data, 'text/html')
+//    eval(doc.querySelector('script').textContent)
+//})

@@ -31,13 +31,11 @@ exitButtons.forEach(button => {
 });
 
 //html
-//var link = document.querySelector('link[rel="import"]');
-//link.addEventListener('load', function(e) {
-//  var importedDoc = link.import;
-//  // importedDoc points to the document under component.html
-//});
-//var mainDoc = document.currentScript.ownerDocument;
-
-
+//const li = document.querySelectorAll('.widget--href')[0]
+//     li.addEventListener('click', (e)=>{
+//         e.preventDefault()
+//         alert('Home Clicked')
+//         window.location.href='/app.html'
+//     })
 
 
