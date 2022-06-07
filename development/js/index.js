@@ -1,5 +1,4 @@
-let indexValue = 1;
-showImg(indexValue);
+let indexValue = 1; // deklaruje zm
 function side_slide(e) {
     showImg(indexValue += e);
 }
@@ -16,4 +15,5 @@ function showImg(e) {
         img[i].style.display = "none";
     }
     img[indexValue - 1].style.display = "inline-block";
-}    
+}   
+showImg(indexValue);
