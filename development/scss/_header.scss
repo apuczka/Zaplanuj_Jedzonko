@@ -3,7 +3,6 @@
 
 .header {
   @include container();
-
   font-family: $fontCharmonan;
   font-size: 14px;
   height: 6em;
@@ -22,9 +21,6 @@
       .header__list--li {
         padding: 10px;
         list-style: none;
-
-
-
 
         .header__list--li--a {
           text-decoration: none;

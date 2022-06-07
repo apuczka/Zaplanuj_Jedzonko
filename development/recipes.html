@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./css/main.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="new__recipe">
+               <!-- nowy Przepis -->
+               <div class="new__head">
+                  <div class="head__logo">NOWY PREPIS</div>
+                  <button class="head__button" type="submit">Zapisz i zmaknij</button>
+               </div>
+               <div class="new__input--name">
+                  <div class="input--name__name">Nazwa przepisu</div>
+                  <input class="input--name__input" type="text" value="">
+               </div>
+               <div class="new__input--decr">
+                  <div class="input--decr__name"> Opis przepisu</div>
+                  <textarea class="input--decr__input" type="text" cols="30" rows="1"></textarea>
+               </div>
+               <div class="new__main">
+                  <div class="main__instruction">
+                     <div class="main__title">INSTRUKCJE</div>
+                     <div class="main__descr">
+                        <textarea class="main__text" cols="30" rows="1"></textarea>
+                        <div class="main__btn"><i class="fa-solid fa-square-plus"></i></div>
+                     </div>
+            
+                  </div>
+                  <div class="main__ingridients">
+                     <div class="main__title">SKLADNIKI</div>
+                     <div class="main__descr">
+                        <textarea class="main__text" cols="30" rows="1"></textarea>
+                        <div class="main__btn"><i class="fa-solid fa-square-plus"></i></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="new__footer">
+                  <ol class="footer__title">
+                     <li class="footer__li">
+                        <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, adipisci.
+                           <button class="footer__edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                           <button class="footer__delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                     </li>
+                  </ol>
+                  <ul class="footer__title">
+                     <li class="footer__li">
+                        <div class="footer__text">Lorem ipsum dolor sit.
+                           <button class="footer__edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                           <button class="footer__delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+   </div>
+   <script src="./js/recipe.js"></script>
+</body>
+</html>

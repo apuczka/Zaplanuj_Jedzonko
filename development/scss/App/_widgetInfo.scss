@@ -1,0 +1,59 @@
+.widget {
+  display: flex;
+}
+
+.widget--info {
+  border: 2px dotted $messTypeInfo;
+  background-color: white;
+  color:$messTypeInfo;
+  //display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 5px;
+}
+.widget--remind {
+  border: 2px dotted $messTypeWarning;
+  background-color: white;
+  color: $messTypeWarning;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 5px;
+
+}
+.widget--check {
+  border: 2px dotted $messTypeSuccess;
+  background-color: white;
+  color: $messTypeSuccess;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.fa-circle-info {
+  color: $messTypeInfo;
+}
+.fa-circle-exclamation {
+  color: $messTypeWarning;
+}
+.fa-circle-check {
+  color: $messTypeSuccess;
+}
+//
+.main--section--widget--notyfication {
+  width: 60%;
+  font-family: $fontOpenSans;
+  font-size: 14px;
+}
+.temporary {
+  border: 1px solid black;
+  width: 30%;
+}
+.button--info {
+  background-color: $messTypeInfo;
+}
+.button--remind {
+  background-color: $messTypeWarning;
+}
+.button--check {
+  background-color: $messTypeSuccess;
+}
