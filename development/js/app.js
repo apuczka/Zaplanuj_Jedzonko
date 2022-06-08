@@ -37,5 +37,25 @@ for (const link of linkAll) {
    document.querySelector('.main__content').style.display = 'none';
 });
 }
-
 //-----------------------------------------------------------------------------------------------------------------------------------------
+const regulationsSection = document.getElementById("regulations");
+
+const data = JSON.parse(localStorage.getItem("recipeData"));
+
+data.map((item,index) => {
+   const { name, describe } = item;
+   const tableBodyElement = document.getElementById("tableBodyFromJs");
+   const tableElement = document.querySelector("#tableBodyFromJs > tr").cloneNode(false);
+   tableElement.innerHTML = `
+                        <td class="table__body__id">${index + 1}</td>
+                        <td class="table__body__name">${name}</td>
+                        <td class="table__body__describe">${describe}</td>
+                        <td class="table__body__icon">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+   `;
+   tableBodyElement.appendChild(tableElement);
+});
+
+

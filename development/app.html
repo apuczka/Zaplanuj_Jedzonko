@@ -79,8 +79,6 @@
               <i class="fa-solid fa-square-xmark"></i>      </div>
           </div>
         </div>
-          
-          
                 <div class="main--section__container">
                     <table class="main--section__container__table">
                         <caption>Twój plan na {nr_tygodnia} tydzień:</caption>
@@ -157,8 +155,35 @@
             </div>
             <!-- to jest sekcja Pulpit -->
         </div>
-        <div class="main--section" id="regulations">
+        <div class="main--section main--section--recipes" id="regulations">
             <!-- to jest sekcja Przepisy -->
+            <header class="main--section--recipes__header" >
+                <h3>Lista przepisów</h3>
+            </header>
+
+            <article class="main--section--recipes__article">
+                <table class="main--section--recipes__article__table table" id="tableFromJs">
+                    <thead class="table__header">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nazwa</th>
+                        <th>Opis</th>
+                        <th>Akcje</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table__body" id="tableBodyFromJs">
+                    <tr>
+                        <td class="table__body__id">1</td>
+                        <td class="table__body__name">Zapiekanka z ziemniakami i brukselką</td>
+                        <td class="table__body__describe">Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zalecanimi Makłowicza, podawać z dobrze dobranym winkiem ;)</td>
+                        <td class="table__body__icon">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
         </div>
         <div class="main--section" id="plans">
             <!-- to jest sekcja Plans -->
