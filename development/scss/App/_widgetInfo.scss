@@ -1,14 +1,13 @@
 .widget {
   display: flex;
+  margin: 0 0 1.25em 0;
 }
 
 .widget--info {
   border: 2px dotted $messTypeInfo;
   background-color: white;
   color:$messTypeInfo;
-  //display: flex;
   justify-content: space-between;
-  margin-bottom: 1em;
   padding: 5px;
 }
 .widget--remind {
@@ -17,7 +16,6 @@
   color: $messTypeWarning;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1em;
   padding: 5px;
 
 }
@@ -42,11 +40,25 @@
 .main--section--widget--notyfication {
   width: 60%;
   font-family: $fontOpenSans;
-  font-size: 14px;
+  font-size: 18px;
+  display: flex;
+  flex-direction:column;
+  flex-grow: 1;
+  .fa-solid{
+    &:first-child{
+    font-size: 2em;
+    }
+  }
 }
-.temporary {
-  border: 1px solid black;
-  width: 30%;
+.widget{
+  span{
+    display: flex;
+    align-items: center;
+    p{
+      font-weight: bold;
+      margin: 0 0 0 .5em;
+    }
+  }
 }
 .button--info {
   background-color: $messTypeInfo;

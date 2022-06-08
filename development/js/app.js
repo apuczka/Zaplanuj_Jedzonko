@@ -26,10 +26,16 @@ const exitButtons = document.querySelectorAll('.fa-square-xmark');
 
 exitButtons.forEach(button => {
    button.addEventListener("click", function () {
-      const widgets = document.querySelectorAll('.widget')
       this.parentElement.style.display = 'none';
+   });
+});
+//kod dla dodaj przepis--------------------------------------------------------------------------------------------------------------------
+const linkAll = document.querySelectorAll('.widget--href');
+for (const link of linkAll) {
+   link.addEventListener('click', () => {
+   document.querySelector('.iframe--recipe').style.display = 'block';
+   document.querySelector('.main__content').style.display = 'none';
+});
+}
 
-   })
-
-})
-
+//-----------------------------------------------------------------------------------------------------------------------------------------
