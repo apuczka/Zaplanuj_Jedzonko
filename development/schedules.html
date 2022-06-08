@@ -1,287 +1,315 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="html--app">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Zaplanuj Jedzonko</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body>
-<div class="main--section__container--plan">
-    <div class="main--section--new">
-        <h1>NOWY PLAN</h1>
-        <button class="button--new--plan">Zapisz i zamknij</button>
+<body class="body--app">
+
+<header class="header--app">
+    <h1 class="header__logo">Zaplanuj <span class="header__logo--color">Jedzonko</span></h1>
+    <ul class="header__list">
+        <li class="header__list--li">
+            <div class="header__name">Imię</div>
+        </li>
+        <li class="header__list--li">
+            <i class="fa-solid fa-circle-user"></i>
+        </li>
+    </ul>
+</header>
+<main class="main">
+    <div class="main__bar">
+        <div data-section="#desktop" class="main__bar--section">
+            Pulpit<i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div data-section="#regulations" class="main__bar--section">
+            Przepisy<i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div data-section="#plans" class="main__bar--section">
+            Plany<i class="fa-solid fa-angle-right"></i>
+        </div>
     </div>
-    <hr>
+    <div class="main__main--section">
 
-    <form class="form--new--plan">
-        <label>
-            <span>Nazwa planu</span>
-            <textarea cols="80"></textarea>
-        </label>
-        <label>
-            <span>Opis planu</span>
-            <textarea type="text" rows="5" cols="80"></textarea>
-        </label>
-        <label>
-            <span>Numer tygodnia</span>
-            <input type="number">
-        </label>
-    </form>
-    <table  border="1" rules="rows" frame="void" class="main--section__table--new--plan">
-        <thead>
-        <tr>
-            <th></th>
-            <th>ŚNIADANIE</th>
-            <th>DRUGIE <br> ŚNIADANIE</th>
-            <th>ZUPA</th>
-            <th>DRUGIE <br>DANIE</th>
-            <th>KOLACJA</th>
-        </tr>
-        </thead>
+        <div class="main--section__container--plan">
+            <div class="main--section--new">
+                <h1>NOWY PLAN</h1>
+                <button class="button--new--plan">Zapisz i zamknij</button>
+            </div>
+            <hr>
 
-        <tbody>
+            <form class="form--new--plan">
+                <label>
+                    <span>Nazwa planu</span>
+                    <textarea cols="80"></textarea>
+                </label>
+                <label>
+                    <span>Opis planu</span>
+                    <textarea type="text" rows="5" cols="80"></textarea>
+                </label>
+                <label>
+                    <span>Numer tygodnia</span>
+                    <input type="number">
+                </label>
+            </form>
+            <table  border="1" rules="rows" frame="void" class="main--section__table--new--plan">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>ŚNIADANIE</th>
+                    <th>DRUGIE <br> ŚNIADANIE</th>
+                    <th>ZUPA</th>
+                    <th>DRUGIE <br>DANIE</th>
+                    <th>KOLACJA</th>
+                </tr>
+                </thead>
 
-        <tr>
+                <tbody>
 
-            <th>PONIEDZIAŁEK</th>
+                <tr>
 
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th>WTOREK</th>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th>ŚRODA</th>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th>CZWARTEK</th>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th>PIĄTEK</th>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th>SOBOTA</th>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th>NIEDZIELA</th>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-            <td>
-                <select>
-                    <option>Zapiekanka z ziemniakami i brukselką</option>
-                    <option>coś innego</option>
-                </select>
-            </td>
-        </tr>
+                    <th>PONIEDZIAŁEK</th>
 
-        </tbody>
-    </table>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>WTOREK</th>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>ŚRODA</th>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>CZWARTEK</th>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>PIĄTEK</th>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>SOBOTA</th>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>NIEDZIELA</th>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Zapiekanka z ziemniakami i brukselką</option>
+                            <option>coś innego</option>
+                        </select>
+                    </td>
+                </tr>
 
-</div>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</main>
 </body>
