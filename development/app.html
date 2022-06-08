@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Zaplanuj Jedzonko</title>
+    <link rel="import" href="recipes.html">
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body class="body--app">
 <header class="header--app">
@@ -36,6 +37,54 @@
     </div>
     <div class="main__main--section">
         <div class="main--section" id="desktop">
+          <div class="temporary">
+            <div class="main--section--widget">
+                <div class="main--section--widget--add">
+                    <div class="widget--add widget-add-recipy">
+                        <a class="widget--href" onclick="window.location.href='recipes.html';">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <span>dodaj przepis</span>
+                    </div>
+                    <div class="widget--add widget-add-plan">
+                        <a class="widget--href" href="schedules.html">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <span>dodaj plan</span>
+                    </div>
+                    <!--<div class="widget--add widget-add-shopping">
+                                    <a class="widget--href" href=".">
+            
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                    <span>zakupy</span>
+                                </div>-->
+                </div>
+            </div>
+          <div class="main--section--widget--notyfication">
+            <div class="widget widget--info">
+            <span><i class="fa-solid fa-circle-info"></i>
+             <p> Masz już 99 przepisów, nieźle!</p>
+            </span>
+              <i class="fa-solid fa-square-xmark"></i>
+            </div>
+            <div class="widget widget--remind">
+              <span>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p> Pamiętaj, aby dodać plan!</p>
+              </span>
+              <i class="fa-solid fa-square-xmark"></i>
+            </div>
+            <div class="widget widget--check">
+                <span>
+              <i class="fa-solid fa-circle-check"></i>
+              <p> Świetnie, że jesteś! Udanego planowania i smacznego! :)</p>
+                </span>
+              <i class="fa-solid fa-square-xmark"></i>      </div>
+          </div>
+        </div>
+          <!-- to jest sekcja Pulpit -->
+          
                 <div class="main--section__container">
                     <table class="main--section__container__table">
                         <caption>Twój plan na {nr_tygodnia} tydzień:</caption>
@@ -109,15 +158,18 @@
                         </button>
                     </div>
                 </div>
-            <div class="main--section" id="regulations">
-                <!-- to jest sekcja Przepisy -->
-            </div>
-            <div class="main--section" id="plans">
-                <!-- to jest sekcja Plans -->
-            </div>
+            
+            <!-- to jest sekcja Pulpit -->
         </div>
+        <div class="main--section" id="regulations">
+            <!-- to jest sekcja Przepisy -->
+        </div>
+        <div class="main--section" id="plans">
+            <!-- to jest sekcja Plans -->
+        </div>
+    </div>
 </main>
 
-<script src="./js/app.js"></script>
-</body>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

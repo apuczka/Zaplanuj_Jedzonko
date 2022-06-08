@@ -1,0 +1,71 @@
+.widget {
+  display: flex;
+  margin: 0 0 1.25em 0;
+}
+
+.widget--info {
+  border: 2px dotted $messTypeInfo;
+  background-color: white;
+  color:$messTypeInfo;
+  justify-content: space-between;
+  padding: 5px;
+}
+.widget--remind {
+  border: 2px dotted $messTypeWarning;
+  background-color: white;
+  color: $messTypeWarning;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+}
+.widget--check {
+  border: 2px dotted $messTypeSuccess;
+  background-color: white;
+  color: $messTypeSuccess;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.fa-circle-info {
+  color: $messTypeInfo;
+}
+.fa-circle-exclamation {
+  color: $messTypeWarning;
+}
+.fa-circle-check {
+  color: $messTypeSuccess;
+}
+//
+.main--section--widget--notyfication {
+  width: 60%;
+  font-family: $fontOpenSans;
+  font-size: 18px;
+  display: flex;
+  flex-direction:column;
+  flex-grow: 1;
+  .fa-solid{
+    &:first-child{
+    font-size: 2em;
+    }
+  }
+}
+.widget{
+  span{
+    display: flex;
+    align-items: center;
+    p{
+      font-weight: bold;
+      margin: 0 0 0 .5em;
+    }
+  }
+}
+.button--info {
+  background-color: $messTypeInfo;
+}
+.button--remind {
+  background-color: $messTypeWarning;
+}
+.button--check {
+  background-color: $messTypeSuccess;
+}
