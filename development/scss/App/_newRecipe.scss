@@ -3,7 +3,7 @@
 
 		&__recipe {
 			color:$tableTrColor_and_iconColorFunc ;
-			height: 100%;
+			height: 100vh ;
 			width: 100%;
 			background-color:$backgroundScreens;
 			border: .1em solid $tableTrColor_and_iconColorFunc;
@@ -52,6 +52,7 @@
 			display: flex;
 			justify-content:space-between;
 			margin: 2em 1.5em;
+			max-height: 53vh;
 		}
 }
 .head {
@@ -176,6 +177,7 @@
 
 		&__title {
 			width:47%;
+			overflow: auto;
 		}
 
 		// .footer__li
@@ -186,11 +188,13 @@
 		// .footer__text
 
 		&__text {
+			font-size:1.4em;
 		}
 
 		// .footer__edit
 
 		&__edit {
+			font-size: 1em;
 			border: none;
 			color:$messTypeWarning;
 			cursor: pointer;
@@ -199,6 +203,7 @@
 		// .footer__delete
 
 		&__delete {
+			font-size: 1em;
 			border:none;
 			color: $buttons_and_favoritism_and_screenHeaders;
 			cursor: pointer;
@@ -206,4 +211,12 @@
 }
 .fa-square-plus {
 	font-size: 1.5em;
+}
+iframe[seamless] {
+	border: none;
+}
+iframe{
+	display:none;
+	width: 100%;
+	height: 100%;
 }

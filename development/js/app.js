@@ -29,13 +29,13 @@ exitButtons.forEach(button => {
       this.parentElement.style.display = 'none';
    });
 });
+//kod dla dodaj przepis--------------------------------------------------------------------------------------------------------------------
+const linkAll = document.querySelectorAll('.widget--href');
+for (const link of linkAll) {
+   link.addEventListener('click', () => {
+   document.querySelector('.iframe--recipe').style.display = 'block';
+   document.querySelector('.main__content').style.display = 'none';
+});
+}
 
-//html
-//const li = document.querySelectorAll('.widget--href')[0]
-//     li.addEventListener('click', (e)=>{
-//         e.preventDefault()
-//         alert('Home Clicked')
-//         window.location.href='/app.html'
-//     })
-
-
+//-----------------------------------------------------------------------------------------------------------------------------------------
