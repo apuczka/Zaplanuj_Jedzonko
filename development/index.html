@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Zaplanuj Jedzonko</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zaplanuj Jedzonko</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
   <header class="header">
     <h1 class="header__logo">Zaplanuj <span class="header__logo--color">Jedzonko</span></h1>
     <ul class="header__list">
@@ -28,95 +29,105 @@
       </li>
     </ul>
   </header>
-    <section>
-      <div class="slideshow">
-        <div class="slideshow__images">
-          <img class="slideshow__images" id="image-1"src="./img/brooke-lark-nTZOILVZuOg-unsplash.jpg"alt="eat healthy part1"></img>
-          <img class="slideshow__images" id="image-2"src="./img/3637975.jpg"alt="eat healthy part2"></img>
-          <img class="slideshow__images" id="image-3"src="./img/ella-olsson-KPDbRyFOTnE-unsplash.jpg"alt="eat healthy part3"></img>
-        </div>
-        <div onclick="side_slide(-1)"class="slideshow__slide--left"> <!--  -->
-          <span class="fa-solid fa-angle-left"></span>
-        </div>
-        <div onclick="side_slide(1)"class="slideshow__slide--right">
-          <span class="fa-solid fa-angle-right"></span>
-        </div>
+  <section>
+    <div class="slideshow">
+      <div class="slideshow__images">
+        <img class="slideshow__images" id="image-1" src="./img/brooke-lark-nTZOILVZuOg-unsplash.jpg"
+          alt="eat healthy part1"></img>
+        <img class="slideshow__images" id="image-2" src="./img/3637975.jpg" alt="eat healthy part2"></img>
+        <img class="slideshow__images" id="image-3" src="./img/ella-olsson-KPDbRyFOTnE-unsplash.jpg"
+          alt="eat healthy part3"></img>
       </div>
-    </section>
-    <section class="CTA">
+      <div onclick="side_slide(-1)" class="slideshow__slide--left">
+        <!--  -->
+        <span class="fa-solid fa-angle-left"></span>
+      </div>
+      <div onclick="side_slide(1)" class="slideshow__slide--right">
+        <span class="fa-solid fa-angle-right"></span>
+      </div>
+    </div>
+  </section>
+  <section class="CTA">
     <div class="CTA__text">
       <h3 class="CTA__text__head">Lorem ipsum dolor sit amet</h3>
-      <div class="CTA__text__text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="CTA__text__text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</div>
     </div>
     <button class="CTA__button">Lorem ipsum</button>
-    </section>
-    <section class="section_aboutApp">
-      <article class="section_aboutApp__article">
-        <i class="fas fa-check section_aboutApp__article__icon"></i>
-        <h1 class="section_aboutApp__article__title">Lorem ipsum dolor sit amet</h1>
-        <p class="section_aboutApp__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-      </article>
-      <article class="section_aboutApp__article">
-        <i class="fa-regular fa-clock section_aboutApp__article__icon"></i>
-        <h1 class="section_aboutApp__article__title">Lorem ipsum dolor sit amet</h1>
-        <p class="section_aboutApp__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-      </article>
-      <article class="section_aboutApp__article">
-        <i class="fas fa-list section_aboutApp__article__icon"></i>
-        <h1 class="section_aboutApp__article__title">Lorem ipsum dolor sit amet</h1>
-        <p class="section_aboutApp__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-      </article>
-    </section>
-    <section class="section_signNewsLetter">
-        <p class="section_signNewsLetter__paragraph">Lorem ipsum dolor sit amet</p>
-        <div class="section_signNewsLetter__container">
-        <input type="text" class="section_signNewsLetter__input"><button class="section_signNewsLetter__button">Lorem</button>
-        </div>
-    </section>
-    <section class="eboutme">
-      <div class="eboutme__inner">
-        <div class="eboutme__portreit"></div>
-        <div class="eboutme__description">
-          <h3 class="description__head">
-            Lorem ipsum dolor sit amet
-          </h3>
+  </section>
+  <section class="section_aboutApp">
+    <article class="section_aboutApp__article">
+      <i class="fas fa-check section_aboutApp__article__icon"></i>
+      <h1 class="section_aboutApp__article__title">Lorem ipsum dolor sit amet</h1>
+      <p class="section_aboutApp__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+        at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+    </article>
+    <article class="section_aboutApp__article">
+      <i class="fa-regular fa-clock section_aboutApp__article__icon"></i>
+      <h1 class="section_aboutApp__article__title">Lorem ipsum dolor sit amet</h1>
+      <p class="section_aboutApp__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+        at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+    </article>
+    <article class="section_aboutApp__article">
+      <i class="fas fa-list section_aboutApp__article__icon"></i>
+      <h1 class="section_aboutApp__article__title">Lorem ipsum dolor sit amet</h1>
+      <p class="section_aboutApp__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+        at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+    </article>
+  </section>
+  <section class="section_signNewsLetter">
+    <p class="section_signNewsLetter__paragraph">Lorem ipsum dolor sit amet</p>
+    <div class="section_signNewsLetter__container">
+      <input type="text" class="section_signNewsLetter__input"><button
+        class="section_signNewsLetter__button">Lorem</button>
+    </div>
+  </section>
+  <section class="eboutme">
+    <div class="eboutme__inner">
+      <div class="eboutme__portreit"></div>
+      <div class="eboutme__description">
+        <h3 class="description__head">
+          Lorem ipsum dolor sit amet
+        </h3>
         <div class="description__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, saepe vitae, reiciendis delectus sint, iure eligendi ipsa ex quasi nobis odit repellat ad ipsum eveniet quibusdam voluptate ut similique. Fugit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, saepe vitae, reiciendis delectus sint,
+          iure eligendi ipsa ex quasi nobis odit repellat ad ipsum eveniet quibusdam voluptate ut similique. Fugit.
         </div>
       </div>
+    </div>
+  </section>
+  <section class="stopka">
+    <div class="stopka__columns">
+      <div class="columns__head">Lorem ipsum dolor</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores expedita dolore. Tenetur magni
+        praesentium maxime voluptate</p>
+    </div>
+    <div class="stopka__columns">
+      <div class="columns__head">Lorem ipsum dolor</div>
+      <ul class="columns__list">
+        <li>consectur adipisicing elit</li>
+        <li>sed do eiusmod tempor</li>
+        <li>incididunt ut labore</li>
+        <li> et dolore magna aliqua</li>
+      </ul>
+    </div>
+    <div class="stopka__columns">
+      <div class="columns__head">Lorem ipsum dolor</div>
+      <div class="columns__input">
+        <input type="text">
+        <button type="submit">Lorem</button>
       </div>
-    </section>
-    <section class="stopka">
-      <div class="stopka__columns">
-        <div class="columns__head">Lorem ipsum dolor</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores expedita dolore. Tenetur magni
-          praesentium maxime voluptate</p>
+      <div class="columns__icon">
+        <a href="#" class="fa-brands fa-facebook-f"></a>
+        <a href="#" class="fa-brands fa-twitter"></a>
+        <a href="#" class="fa-brands fa-instagram"></a>
       </div>
-      <div class="stopka__columns">
-        <div class="columns__head">Lorem ipsum dolor</div>
-        <ul class="columns__list">
-          <li>consectur adipisicing elit</li>
-          <li>sed do eiusmod tempor</li>
-          <li>incididunt ut labore</li>
-          <li> et dolore magna aliqua</li>
-        </ul>
-      </div>
-      <div class="stopka__columns">
-        <div class="columns__head">Lorem ipsum dolor</div>
-        <div class="columns__input">
-          <input type="text">
-          <button type="submit">Lorem</button>
-        </div>
-        <div class="columns__icon">
-          <a href="#" class="fa-brands fa-facebook-f"></a>
-          <a href="#" class="fa-brands fa-twitter"></a>
-          <a href="#" class="fa-brands fa-instagram"></a>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__text">Copyright<span> ZaplanujJedzonko.pl</span></div>
-    </footer>
-    <script src="./js/index.js"></script>
-  </body>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__text">Copyright<span> ZaplanujJedzonko.pl</span></div>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
