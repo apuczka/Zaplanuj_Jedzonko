@@ -11,20 +11,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin: 20px;
   padding: 25px 10px;
   font-weight: bold;
   color: $messTypeSuccess;
   background-color: $backgroundScreens;
   border: 2px dotted $messTypeSuccess;
   font-size: 20px;
+  cursor: pointer;
 }
-.fa-square-plus {
+.fa-plus {
+  color: $messTypeSuccess;
   font-size: 60px;
   margin-bottom: 15px;
-
+  padding:.1em;
+  border: .1em solid $messTypeSuccess;
+  border-radius:.2em;
+  
+}
+.widget--add {
+  height:10em;
+  width: 10em;
+  margin:0 20px 20px 0;
 }
 
-.--fa-inverse {
-  color: $messTypeSuccess;
+.temporary {
+  display: flex;
+  margin: 0 0 2em 0;
 }
