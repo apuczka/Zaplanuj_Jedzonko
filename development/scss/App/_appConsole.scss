@@ -33,9 +33,7 @@
    // .main__bar--section
 
    &__bar--section {
-      position: relative;
-      font-size:2em;
-      padding: .5em;
+
       color: $backgroundScreens;
       cursor: pointer;
       i {
@@ -54,7 +52,7 @@
       align-items:center;
       overflow: hidden;
       #desktop{
-         //background:green;
+         background:$backgroundScreens;
       }
       #regulations{
          background: yellow;
