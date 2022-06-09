@@ -4,10 +4,10 @@
 .header {
   @include container();
   font-family: $fontCharmonan;
-  font-size: 14px;
+  font-size: 1.5em;
   height: 6em;
   width: 100vw;
-  padding: 2em;
+  padding: 0 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,10 @@
 
     .header__list {
       display: flex;
-      font-family: $fontOpenSans;
+      flex-grow: 1;
+        font-family: "Open Sans", sans-serif;
+        justify-content: space-evenly;
+            margin: 0 0 0 3em;
 
       .header__list--li {
         padding: 10px;

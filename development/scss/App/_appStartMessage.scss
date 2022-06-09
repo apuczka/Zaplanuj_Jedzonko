@@ -1,0 +1,51 @@
+.main__section__startMessage {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height:100vh;
+    position:absolute;
+    align-self: center;
+    right:30vh;
+        
+    }
+.main__section__startMessage__header {
+    font-size: 36px;
+    color: #4a4a49;
+    margin-bottom:20px;
+    }
+.main__section__startMessage__paragraph1 {
+    font-size: 24px;
+    color: #4a4a49;
+    font-weight:700;
+    margin-bottom:20px;
+    }
+.main__section__startMessage__form_input {
+    padding:10px;
+    width: 278px;
+    height: 28px;
+    margin-bottom:15px;
+    font-size:1rem;
+    }
+
+.main__section__startMessage__button {
+    background-color:#FF6600;
+    cursor: pointer;
+    padding: 6px 10px;
+    width:130px;
+    height:42px; 
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    border:none;
+    margin-bottom:25px;
+    }
+.main__section__startMessage__paragraph2 {
+    font-size: 20px;
+    color: #4a4a49;
+    font-weight: 700;
+    }
+.main__main--section .main--section {
+    display: none;
+}
