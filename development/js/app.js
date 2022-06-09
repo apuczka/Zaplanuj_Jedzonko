@@ -32,4 +32,24 @@ exitButtons.forEach(button => {
    })
 
 })
+//show firstMessage
+let desktopBtn = document.querySelector("#startMessage");
+let showDesktop = document.querySelector("#desktop");
+let hideWelcomeMessage = document.querySelector(".main__section__startMessage");
+const nameInput = document.querySelector("#startMessage-form-username").value;
+//funkcja sprawdza czy imię zawaiera jakąś cyfrę
+function containsNumber(value) {
+  return /\d/.test(value);
+}
+desktopBtn.addEventListener("click", function () {
+   if(nameInput.length > 0 && nameInput.length < 15 && containsNumber(nameInput) !== true){
+   showDesktop.style.display = "block";
+      hideWelcomeMessage.style.display = "none";
+   }
+   else {
+      containsNumber(nameInput);
+      alert("Imię może składać się wyłącznie z maksymalnie 20 liter i nie może zawierać cyfr");
+   }
+})
+
 
