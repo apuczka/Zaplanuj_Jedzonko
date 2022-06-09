@@ -51,8 +51,8 @@
 		&__footer {
 			display: flex;
 			justify-content:space-between;
-			margin: 2em 1.5em;
-			max-height: 53vh;
+			margin: 2em 0;
+			max-height: 55vh;
 		}
 }
 .head {
@@ -149,11 +149,12 @@
 			margin-right: .5em;
 			resize: none;
 			border: 1px solid $tableTrColor_and_iconColorFunc;
-			overflow: hidden;
 			outline: none;
 			font-size: 1em;
 			padding: 0 .5em;
+			overflow: hidden;
 			line-height: 1.75em;
+			margin: 0 .5em;
 		}
 
 		// .main__btn
@@ -176,20 +177,22 @@
 		// .footer__title
 
 		&__title {
-			width:47%;
+			width:50%;
 			overflow: auto;
+			padding: 0 2em;
 		}
 
 		// .footer__li
 
 		&__li {
-
 		}
 
 		// .footer__text
 
 		&__text {
-			display: inline-block;
+
+
+			
 			font-size:1.4em;
 		}
 
