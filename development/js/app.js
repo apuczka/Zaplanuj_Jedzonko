@@ -63,7 +63,7 @@ desktopBtn.addEventListener("click", function (event) {
    showDesktop.style.display = "block";
    hideWelcomeMessage.style.display = "none";
    }
-   else if{
+   else {
        alert("Imię może składać się wyłącznie z maksymalnie 20 liter i nie może zawierać cyfr lub znaków specjalnych");
    }
 })
