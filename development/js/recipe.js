@@ -34,11 +34,19 @@ let recipe = {
 
 //nasłuchiwanie na przycisk dodania nowej instrukcji
 btnInstructions.addEventListener("click", () => {
-    const cloneOlItem = document.querySelectorAll(".olListItem")[0].cloneNode(true);
+    const olLiElement = document.createElement("li");
+    olLiElement.classList.add("footer__li", "olListItem")
+    olLiElement.innerHTML = `
+                            <div class="footer__text">
+                               <p></p>
+                               <button class="footer__edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                               <button class="footer__delete"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+    `;
 
-    if(textAreaInstructions.value.length) {
-        cloneOlItem.querySelector("div > p").innerText = textAreaInstructions.value;
-        document.querySelector(".footer__title--ol").appendChild(cloneOlItem);
+    if (textAreaInstructions.value.length) {
+        olLiElement.querySelector("div > p").innerText = textAreaInstructions.value;
+        document.querySelector(".footer__title--ol").appendChild(olLiElement);
         textAreaInstructions.placeholder = "";
         textAreaInstructions.value = "";
         textAreaInstructions.style.border = "";
@@ -50,11 +58,18 @@ btnInstructions.addEventListener("click", () => {
 });
 //nasłuchiwanie na przycisk dodania nowego składnika
 btnIngredients.addEventListener("click", () => {
-    const cloneUlItem = document.querySelectorAll(".ulListItem")[0].cloneNode(true);
+    const ulLiElement = document.createElement("li");
+    ulLiElement.classList.add("footer__li", "olListItem")
+    ulLiElement.innerHTML = `
+                        <div class="footer__text"><p></p>
+                           <button class="footer__edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                           <button class="footer__delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+    `;
 
-    if(textAreaIngredients.value) {
-        cloneUlItem.querySelector("div > p").innerText = textAreaIngredients.value;
-        document.querySelector(".footer__title--ul").appendChild(cloneUlItem);
+    if (textAreaIngredients.value) {
+        ulLiElement.querySelector("div > p").innerText = textAreaIngredients.value;
+        document.querySelector(".footer__title--ul").appendChild(ulLiElement);
         textAreaIngredients.placeholder = "";
         textAreaIngredients.value = "";
         textAreaIngredients.style.border = "";
@@ -66,8 +81,8 @@ btnIngredients.addEventListener("click", () => {
 });
 
 buttonSaveAndClose.addEventListener("click", (e) => {
-
-    if(inputName.value && inputDescription.value) {
+    console.log(document.querySelector(".iframe--recipe"));
+    if (inputName.value && inputDescription.value) {
         const olListItem = document.querySelectorAll(".olListItem");
         const ulListItem = document.querySelectorAll(".ulListItem");
 
@@ -93,6 +108,10 @@ buttonSaveAndClose.addEventListener("click", (e) => {
         inputDescription.style.border = "";
         inputName.value = "";
         inputDescription.value = "";
+
+        document.querySelector(".iframe--recipe").style.display = "none";
+
+        document.querySelector(".main__content").style.display = "block";
     } else {
         inputName.placeholder = "Wpisz nazwę...";
         inputName.style.border = "1px solid red";
@@ -104,7 +123,6 @@ buttonSaveAndClose.addEventListener("click", (e) => {
 //------------------------------------------------------------------------
 
 
-
 //const addRecipe= document.querySelector('.app');
 //fetch('/app.html')
 //.then(res=>res.text())
@@ -114,4 +132,6 @@ buttonSaveAndClose.addEventListener("click", (e) => {
 //    const doc = parser.parseFromString(data, 'text/html')
 //    eval(doc.querySelector('script').textContent)
 //})
+
+// console.log(buttonSaveAndClose.parentElement.parentElement);
 
