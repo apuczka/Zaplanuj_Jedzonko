@@ -23,19 +23,28 @@ document.querySelector('.main__bar--section').click();
 //exit widget info
 
 const exitButtons = document.querySelectorAll('.fa-square-xmark');
-
 exitButtons.forEach(button => {
    button.addEventListener("click", function () {
       this.parentElement.style.display = 'none';
    });
 });
-//kod dla dodaj przepis--------------------------------------------------------------------------------------------------------------------
-const linkAll = document.querySelectorAll('.widget--href');
-for (const link of linkAll) {
-   link.addEventListener('click', () => {
-   document.querySelector('.iframe--recipe').style.display = 'block';
-   document.querySelector('.main__content').style.display = 'none';
-});
-}
 
+//kod dla widgets--------------------------------------------------------------------------------------------------------------------
+
+class ADD {
+   constructor(block, child) {
+      this.block = block;
+      this.child = child;
+      const linkAll = document.querySelectorAll('.widget--href');
+      const iframe = document.querySelectorAll('iframe');
+      console.log(iframe);
+         linkAll[`${this.child}`].addEventListener('click', () => {
+         document.querySelector(`.iframe--${this.block}`).style.display = 'block';
+         document.querySelector('.main__content').style.display = 'none';
+         });
+      
+   };
+};
+new ADD('recipe',0);
+new ADD('schedules',1);
 //-----------------------------------------------------------------------------------------------------------------------------------------
