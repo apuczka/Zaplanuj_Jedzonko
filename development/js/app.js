@@ -87,4 +87,7 @@ new ADD('recipe',0);
 new ADD('schedules',1);
 
 
-//
+//number recipes
+
+const numberRecipes = JSON.parse(localStorage.getItem("recipeData")).length;
+document.querySelector(".numberRecipes").innerText = `Masz już ${numberRecipes} przepisy, nieźle!`;
