@@ -162,36 +162,21 @@
         </div>
         <div class="main--section" id="plans">
             <!-- to jest sekcja Plans -->
-            <div class="main--section__container--plan">
+            <iframe class="iframe--recipe" src="recipes.html" seamless ></iframe>
+            <div class="main--section__container">
                 <div class="main--section--new">
-                    <h1>NOWY PLAN</h1>
-                    <button class="button--new--plan">Zapisz i zamknij</button>
+                    <h1>LISTA PLANÓW</h1>
+                    <i class="fa-solid fa-plus"></i>
                 </div>
                 <hr>
-
-                <form class="form--new--plan">
-                    <label>
-                        <span>Nazwa planu</span>
-                        <textarea cols="80"></textarea>
-                    </label>
-                    <label>
-                        <span>Opis planu</span>
-                        <textarea type="text" rows="5" cols="80"></textarea>
-                    </label>
-                    <label>
-                        <span>Numer tygodnia</span>
-                        <input type="number">
-                    </label>
-                </form>
-                <table  border="1" rules="rows" frame="void" class="main--section__table--new--plan">
+                <table  border="1" rules="rows" frame="void" class="main--section__table--new--plan schedules">
                     <thead>
                     <tr>
-                        <th></th>
-                        <th>ŚNIADANIE</th>
-                        <th>DRUGIE <br> ŚNIADANIE</th>
-                        <th>ZUPA</th>
-                        <th>DRUGIE <br>DANIE</th>
-                        <th>KOLACJA</th>
+                        <th>ID</th>
+                        <th>NAZWA</th>
+                        <th>OPIS</th>
+                        <th>TYDZIEŃ</th>
+                        <th>AKCJE</th>
                     </tr>
                     </thead>
 
@@ -199,235 +184,89 @@
 
                     <tr>
 
-                        <th>PONIEDZIAŁEK</th>
+                        <td>1</td>
 
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Plan jarski na bezmięsny tydzien
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            46
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+
+                        <td>
+                            Plan jarski na bezmięsny tydzien
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                        </td>
+                        <td>
+                            33
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
                         </td>
                     </tr>
                     <tr>
-                        <th>WTOREK</th>
+                        <td>3</td>
+
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Plan jarski na bezmięsny tydzien
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            12
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
                         </td>
                     </tr>
                     <tr>
-                        <th>ŚRODA</th>
+                        <td>4</td>
+
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Plan jarski na bezmięsny tydzien
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            52
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
                         </td>
                     </tr>
                     <tr>
-                        <th>CZWARTEK</th>
+                        <td>5</td>
+
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Plan jarski na bezmięsny tydzien
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            52
                         </td>
                         <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>PIĄTEK</th>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>SOBOTA</th>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>NIEDZIELA</th>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option>Zapiekanka z ziemniakami i brukselką</option>
-                                <option>coś innego</option>
-                            </select>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
                         </td>
                     </tr>
 

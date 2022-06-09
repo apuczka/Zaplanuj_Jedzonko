@@ -1,0 +1,19 @@
+
+.main--section--new > .fa-plus {
+  background: $messTypeSuccess;
+  color: white;
+  font-size: 2rem;
+
+}
+
+.main--section__table--new--plan td {
+  color: $tableTrColor_and_iconColorFunc;
+}
+
+.schedules th {
+  color: $mainHeader_and_colorTextInColumns;
+}
+.schedules i {
+  color:$messTypeWarning;
+}
+
