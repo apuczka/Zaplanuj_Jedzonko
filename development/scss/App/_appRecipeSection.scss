@@ -1,0 +1,73 @@
+@import "../variables";
+
+.main--section--recipes {
+    background-color: #FFFFFA;
+    padding: 30px;
+
+    > .main--section--recipes__header {
+        border-bottom: 2px solid #A1A194;
+        margin-bottom: 30px;
+        > h3 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $buttons_and_favoritism_and_screenHeaders;
+        }
+    }
+
+
+    > .main--section--recipes__article {
+        overflow-y: scroll;
+        max-height: 80%;
+        > .main--section--recipes__article__table {
+            border-top: 1px solid #A1A194;
+            border-bottom: 1px solid #A1A194;
+            width: 100%;
+
+            > .table__header {
+                font-size: 20px;
+                padding: 10px 0;
+                color: $mainHeader_and_colorTextInColumns;
+                th {
+
+                    text-align: start;
+                }
+            }
+
+            > .table__body {
+                color: $tableTrColor_and_iconColorFunc;
+                border-top: 1px solid #A1A194;
+                td {
+                    border-top: 1px solid #A1A194;
+                    min-width: 40px;
+                    max-width: 525px;
+                    text-align: start;
+
+                }
+
+                .table__body__id {
+                    font-size: 16px;
+                }
+
+                .table__body__name {
+                    font-size: 16px;
+                }
+
+                .table__body__describe {
+                    font-size: 14px;
+
+                }
+
+                .table__body__icon {
+                    > i {
+                        &:nth-child(1) {
+                            color: $messTypeWarning;
+                        }
+                        &:nth-child(2) {
+                            color: $trashColorIcon;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

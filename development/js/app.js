@@ -37,11 +37,11 @@ exitButtons.forEach(button => {
 //   document.querySelector('.iframe--recipe').style.display = 'block';
 //      document.querySelector('.main__content').style.display = 'none';
 //   document.querySelector('.iframe--schedules').style.display = 'none';
-      
+
 //});
 //}
 
-//kod dla wpisywania imienia w first message 
+//kod dla wpisywania imienia w first message
 
 const desktopBtn = document.querySelector("#startMessage");
 const showDesktop = document.querySelector("#desktop");
@@ -66,7 +66,7 @@ function switchOffdesktop() {
    if (document.querySelector(".main__content").style.display = "block") {
       return document.querySelector(".main__content").style.display = "none";
    }
-  
+
 }
 switchOffdesktop();
 //kod dla zapisywania imienia w local storage i przełączania z sekcji start message na deskotp
@@ -107,5 +107,34 @@ new ADD('schedules',1);
 //number recipes
 const numberRecipes = JSON.parse(localStorage.getItem("recipeData")).length;
 document.querySelector(".numberRecipes").innerText = `Masz już ${numberRecipes} przepisy, nieźle!`;
+
+
+const linkAll = document.querySelectorAll('.widget--href');
+for (const link of linkAll) {
+   link.addEventListener('click', () => {
+   document.querySelector('.iframe--recipe').style.display = 'block';
+   document.querySelector('.main__content').style.display = 'none';
+});
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------
+const regulationsSection = document.getElementById("regulations");
+
+const data = JSON.parse(localStorage.getItem("recipeData"));
+
+data.map((item,index) => {
+   const { name, describe } = item;
+   const tableBodyElement = document.getElementById("tableBodyFromJs");
+   const tableElement = document.querySelector("#tableBodyFromJs > tr").cloneNode(false);
+   tableElement.innerHTML = `
+                        <td class="table__body__id">${index + 1}</td>
+                        <td class="table__body__name">${name}</td>
+                        <td class="table__body__describe">${describe}</td>
+                        <td class="table__body__icon">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+   `;
+   tableBodyElement.appendChild(tableElement);
+});
 
 
