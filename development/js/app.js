@@ -101,7 +101,10 @@ function showPlans(e) {
     for (i = 0; i < allPlans.length; i++){
         allPlans[i].style.display = "none";
     }
-    allPlans[IndexValue - 1].style.display = "flex";
+   allPlans[IndexValue - 1].style.display = "flex";
+   [...allPlans].map((item, index) => {
+   item.querySelector("caption").innerText = `Twój plan na ${index + 1} tydzień:`
+})
 }   
 showPlans(IndexValue);
 
