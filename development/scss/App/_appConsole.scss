@@ -54,13 +54,13 @@
       align-items:center;
       overflow: hidden;
       #desktop{
-         //background:green;
+         background:$backgroundScreens;
       }
       #regulations{
          background: yellow;
       }
       #plans{
-         background: blue;
+         background: $backgroundScreens;
       }
       .open {
          display: block;
