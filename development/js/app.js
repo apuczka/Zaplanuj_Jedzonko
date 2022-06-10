@@ -72,10 +72,8 @@ desktopBtn.addEventListener("click", function (event) {
       document.querySelector(".main__content").style.display = "block";
       hideWelcomeMessage.style.display = "none";
       let saveName = nameInput.value;
-      let nameArray = [];
       document.querySelector(".header__name").innerHTML = saveName;
       localStorage.setItem('name', saveName);
-      nameArray.push(saveName);
    }
    else {
        alert("Imię może składać się wyłącznie z maksymalnie 20 liter i nie może zawierać cyfr lub znaków specjalnych");
