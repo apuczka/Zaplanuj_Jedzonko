@@ -1,6 +1,8 @@
 const barSection = document.querySelectorAll('.main__bar--section');
 const mainSection = document.querySelectorAll('.main--section');
 
+
+
 barSection.forEach(item => {
    item.addEventListener('click', () => {
       let currentBar = item;
@@ -105,3 +107,5 @@ new ADD('schedules',1);
 //number recipes
 const numberRecipes = JSON.parse(localStorage.getItem("recipeData")).length;
 document.querySelector(".numberRecipes").innerText = `Masz już ${numberRecipes} przepisy, nieźle!`;
+
+

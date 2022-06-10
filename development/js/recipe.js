@@ -1,9 +1,9 @@
+
 //text area---------------------------------------------------------------
 const textarea = document.querySelectorAll('textarea');
 for (const area of textarea) {
     area.addEventListener('keydown', resize);
 }
-;
 
 function resize() {
     const el = this;
@@ -29,7 +29,7 @@ let recipe = {
     name: "",
     describe: "",
     instruction: [],
-    ingredients: [],
+    ingredients: []
 }
 
 //nasłuchiwanie na przycisk dodania nowej instrukcji
@@ -81,19 +81,17 @@ btnIngredients.addEventListener("click", () => {
     }
 });
 
-buttonSaveAndClose.addEventListener("click", (e) => {
-    document.querySelector(".head__button").parentElement.parentElement.style.display = "none";
+buttonSaveAndClose.addEventListener("click", () => {
     if (inputName.value && inputDescription.value) {
         const olListItem = document.querySelectorAll(".olListItem");
         const ulListItem = document.querySelectorAll(".ulListItem");
 
-        e.preventDefault();
         recipe = {
             ...recipe,
             name: inputName.value,
             describe: inputDescription.value,
             instruction: [...olListItem].map(item => item.innerText),
-            ingredients: [...ulListItem].map(item => item.innerText),
+            ingredients: [...ulListItem].map(item => item.innerText)
         }
 
         //sprawdzenie czy localStorage nie jest puste, dodanie nowego przepisu
@@ -102,7 +100,7 @@ buttonSaveAndClose.addEventListener("click", (e) => {
         localStorage.setItem('recipeData', JSON.stringify(recipe));
         allOfRecipes.push(recipe);
         localStorage.setItem("recipeData", JSON.stringify(allOfRecipes));
-        //
+
         inputName.placeholder = "";
         inputName.style.border = "";
         inputDescription.placeholder = "";
@@ -110,9 +108,8 @@ buttonSaveAndClose.addEventListener("click", (e) => {
         inputName.value = "";
         inputDescription.value = "";
 
-        document.querySelector(".iframe--recipe").style.display = "none";
-
-        document.querySelector(".main__content").style.display = "block";
+        window.frameElement.style.display = "none";
+        window.frameElement.nextElementSibling.style.display = "block";
     } else {
         inputName.placeholder = "Wpisz nazwę...";
         inputName.style.border = "1px solid red";
@@ -122,3 +119,4 @@ buttonSaveAndClose.addEventListener("click", (e) => {
     }
 });
 //------------------------------------------------------------------------
+
