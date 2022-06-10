@@ -38,35 +38,35 @@ for (const link of linkAll) {
 }
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
-const desktopBtn = document.querySelector("#startMessage");
-const showDesktop = document.querySelector("#desktop");
-const hideWelcomeMessage = document.querySelector(".main__section__startMessage");
-const nameInput = document.querySelector("#startMessage-form-username");
-//funkcja sprawdza czy imię zawaiera jakąś cyfrę
-function containsNumber(value) {
-  return /\d/.test(value);
-}
-const format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-
-function containsSpecialCharacters(string){
-   if (format.test(string)) {
-      return true;
-   } else {
-      return false;
-   }
-}
+// const desktopBtn = document.querySelector("#startMessage");
+// const showDesktop = document.querySelector("#desktop");
+// const hideWelcomeMessage = document.querySelector(".main__section__startMessage");
+// const nameInput = document.querySelector("#startMessage-form-username");
+// //funkcja sprawdza czy imię zawaiera jakąś cyfrę
+// function containsNumber(value) {
+//   return /\d/.test(value);
+// }
+// const format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+//
+// function containsSpecialCharacters(string){
+//    if (format.test(string)) {
+//       return true;
+//    } else {
+//       return false;
+//    }
+// }
 //funkcja sprawdza czy do inputa nie wpisano jakiegoś znaku nie będącego cyfrą
 
-desktopBtn.addEventListener("click", function (event) {
-   event.preventDefault;
-   if(nameInput.value.length > 0 && nameInput.value.length < 15 && containsNumber(nameInput.value) !== true && containsSpecialCharacters(nameInput.value) !==true){
-   showDesktop.style.display = "block";
-   hideWelcomeMessage.style.display = "none";
-   }
-   else {
-       alert("Imię może składać się wyłącznie z maksymalnie 20 liter i nie może zawierać cyfr lub znaków specjalnych");
-   }
-})
+// desktopBtn.addEventListener("click", function (event) {
+//    event.preventDefault;
+//    if(nameInput.value.length > 0 && nameInput.value.length < 15 && containsNumber(nameInput.value) !== true && containsSpecialCharacters(nameInput.value) !==true){
+//    showDesktop.style.display = "block";
+//    hideWelcomeMessage.style.display = "none";
+//    }
+//    else {
+//        alert("Imię może składać się wyłącznie z maksymalnie 20 liter i nie może zawierać cyfr lub znaków specjalnych");
+//    }
+// })
 
 //kod dla widgets--------------------------------------------------------------------------------------------------------------------
 
@@ -89,6 +89,5 @@ new ADD('schedules',1);
 
 
 //number recipes
-
 const numberRecipes = JSON.parse(localStorage.getItem("recipeData")).length;
 document.querySelector(".numberRecipes").innerText = `Masz już ${numberRecipes} przepisy, nieźle!`;

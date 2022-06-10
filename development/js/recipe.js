@@ -34,6 +34,7 @@ let recipe = {
 
 //nasłuchiwanie na przycisk dodania nowej instrukcji
 btnInstructions.addEventListener("click", () => {
+
     const olLiElement = document.createElement("li");
     olLiElement.classList.add("footer__li", "olListItem")
     olLiElement.innerHTML = `
@@ -81,7 +82,7 @@ btnIngredients.addEventListener("click", () => {
 });
 
 buttonSaveAndClose.addEventListener("click", (e) => {
-    console.log(document.querySelector(".iframe--recipe"));
+    document.querySelector(".head__button").parentElement.parentElement.style.display = "none";
     if (inputName.value && inputDescription.value) {
         const olListItem = document.querySelectorAll(".olListItem");
         const ulListItem = document.querySelectorAll(".ulListItem");
@@ -121,17 +122,3 @@ buttonSaveAndClose.addEventListener("click", (e) => {
     }
 });
 //------------------------------------------------------------------------
-
-
-//const addRecipe= document.querySelector('.app');
-//fetch('/app.html')
-//.then(res=>res.text())
-//.then(data=>{
-//    addRecipe.innerHTML=data
-//    const parser = new DOMParser()
-//    const doc = parser.parseFromString(data, 'text/html')
-//    eval(doc.querySelector('script').textContent)
-//})
-
-// console.log(buttonSaveAndClose.parentElement.parentElement);
-
