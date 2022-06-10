@@ -83,6 +83,27 @@ desktopBtn.addEventListener("click", function (event) {
        alert("Imię może składać się wyłącznie z maksymalnie 20 liter i nie może zawierać cyfr lub znaków specjalnych");
    }
 })
+// funkcja zmieniająca plany po nacisnięciu buttona
+let IndexValue = 1;
+function showNextPlan(e) {
+    showPlans(IndexValue += e);
+}
+function showPlans(e) {
+   let i;
+   const allPlans = document.querySelectorAll('#userPlan');
+   console.log(allPlans);
+    if (e > allPlans.length) {
+        IndexValue = 1;
+    }
+    if (e < 1) {
+        IndexValue = allPlans.length;
+    }
+    for (i = 0; i < allPlans.length; i++){
+        allPlans[i].style.display = "none";
+    }
+    allPlans[IndexValue - 1].style.display = "flex";
+}   
+showPlans(IndexValue);
 
 //kod dla widgets--------------------------------------------------------------------------------------------------------------------
 
