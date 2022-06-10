@@ -29,13 +29,15 @@ exitButtons.forEach(button => {
    });
 });
 //kod dla dodaj przepis--------------------------------------------------------------------------------------------------------------------
-const linkAll = document.querySelectorAll('.widget--href');
-for (const link of linkAll) {
-   link.addEventListener('click', () => {
-   document.querySelector('.iframe--recipe').style.display = 'block';
-   document.querySelector('.main__content').style.display = 'none';
-});
-}
+//const linkAll = document.querySelectorAll('.widget--href');
+//for (const link of linkAll) {
+//   link.addEventListener('click', () => {
+//   document.querySelector('.iframe--recipe').style.display = 'block';
+//      document.querySelector('.main__content').style.display = 'none';
+//   document.querySelector('.iframe--schedules').style.display = 'none';
+      
+//});
+//}
 
 //kod dla wpisywania imienia w first message 
 
@@ -93,11 +95,11 @@ class ADD {
          document.querySelector(`.iframe--${this.block}`).style.display = 'block';
          document.querySelector('.main__content').style.display = 'none';
          });
-
    };
 };
 new ADD('recipe',0);
 new ADD('schedules',1);
+
 
 
 //number recipes
