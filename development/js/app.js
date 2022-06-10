@@ -29,13 +29,13 @@ exitButtons.forEach(button => {
    });
 });
 //kod dla dodaj przepis--------------------------------------------------------------------------------------------------------------------
-const linkAll = document.querySelectorAll('.widget--href');
-for (const link of linkAll) {
-   link.addEventListener('click', () => {
-   document.querySelector('.iframe--recipe').style.display = 'block';
-   document.querySelector('.main__content').style.display = 'none';
-});
-}
+//const linkAll = document.querySelectorAll('.widget--href');
+//for (const link of linkAll) {
+//   link.addEventListener('click', () => {
+//   document.querySelector('.iframe--recipe').style.display = 'block';
+//   document.querySelector('.main__content').style.display = 'none';
+//});
+//}
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
 // const desktopBtn = document.querySelector("#startMessage");
@@ -86,6 +86,7 @@ class ADD {
 };
 new ADD('recipe',0);
 new ADD('schedules',1);
+
 
 
 //number recipes

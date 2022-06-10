@@ -82,7 +82,7 @@ btnIngredients.addEventListener("click", () => {
 });
 
 buttonSaveAndClose.addEventListener("click", (e) => {
-    document.querySelector(".head__button").parentElement.parentElement.style.display = "none";
+    //document.querySelector(".head__button").parentElement.parentElement.style.display = "none";
     if (inputName.value && inputDescription.value) {
         const olListItem = document.querySelectorAll(".olListItem");
         const ulListItem = document.querySelectorAll(".ulListItem");
