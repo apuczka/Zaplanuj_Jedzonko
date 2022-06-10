@@ -2,7 +2,7 @@
 @import "../variables";
 
 .main--section__container {
-  background-color: #FFFFFA;
+  background-color: $backgroundScreens;
   width: 100%;
   @include displayFlex(column);
   border: 2px dotted #A1A194;

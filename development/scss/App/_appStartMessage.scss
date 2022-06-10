@@ -3,13 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vh;
-    height:100vh;
-    position:absolute;
+    background: $backgroundScreens;
+    width: 100%;
     align-self: center;
-    right:30vh;
-
-    }
+    height: 100%;
+}
 .main__section__startMessage__header {
     font-size: 36px;
     color: #4a4a49;
@@ -46,6 +44,4 @@
     color: #4a4a49;
     font-weight: 700;
     }
-.main__main--section .main--section {
-    display: none;
-}
+    

@@ -1,8 +1,8 @@
 .main--section__container--plan {
   color: $mainHeader_and_colorTextInColumns;
   background: $backgroundScreens;
-  height: 90%;
-  width: 90%;
+  height: 100vh;
+  //width: 90%;
   border: 2px dotted #A1A194;
 
 }
@@ -42,6 +42,7 @@
 .form--new--plan textarea {
   margin: 0 0 0 60px;
   width: 80%;
+  resize: none;
 }
 .form--new--plan input {
   margin: 0 0 0 40px;
