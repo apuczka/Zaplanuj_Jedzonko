@@ -53,6 +53,15 @@
       justify-content:center;
       align-items:center;
       overflow: hidden;
+      #desktop{
+         //background:$backgroundScreens;
+      }
+      #regulations{
+         background: yellow;
+      }
+      #plans{
+         background: $backgroundScreens;
+      }
       .open {
          display: block;
       }

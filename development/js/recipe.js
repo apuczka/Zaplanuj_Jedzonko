@@ -1,9 +1,9 @@
+
 //text area---------------------------------------------------------------
 const textarea = document.querySelectorAll('textarea');
 for (const area of textarea) {
     area.addEventListener('keydown', resize);
 }
-;
 
 function resize() {
     const el = this;
@@ -29,16 +29,25 @@ let recipe = {
     name: "",
     describe: "",
     instruction: [],
-    ingredients: [],
+    ingredients: []
 }
 
 //nasłuchiwanie na przycisk dodania nowej instrukcji
 btnInstructions.addEventListener("click", () => {
-    const cloneOlItem = document.querySelectorAll(".olListItem")[0].cloneNode(true);
 
-    if(textAreaInstructions.value.length) {
-        cloneOlItem.querySelector("div > p").innerText = textAreaInstructions.value;
-        document.querySelector(".footer__title--ol").appendChild(cloneOlItem);
+    const olLiElement = document.createElement("li");
+    olLiElement.classList.add("footer__li", "olListItem")
+    olLiElement.innerHTML = `
+                            <div class="footer__text">
+                               <p></p>
+                               <button class="footer__edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                               <button class="footer__delete"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+    `;
+
+    if (textAreaInstructions.value.length) {
+        olLiElement.querySelector("div > p").innerText = textAreaInstructions.value;
+        document.querySelector(".footer__title--ol").appendChild(olLiElement);
         textAreaInstructions.placeholder = "";
         textAreaInstructions.value = "";
         textAreaInstructions.style.border = "";
@@ -50,11 +59,18 @@ btnInstructions.addEventListener("click", () => {
 });
 //nasłuchiwanie na przycisk dodania nowego składnika
 btnIngredients.addEventListener("click", () => {
-    const cloneUlItem = document.querySelectorAll(".ulListItem")[0].cloneNode(true);
+    const ulLiElement = document.createElement("li");
+    ulLiElement.classList.add("footer__li", "olListItem")
+    ulLiElement.innerHTML = `
+                        <div class="footer__text"><p></p>
+                           <button class="footer__edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                           <button class="footer__delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+    `;
 
-    if(textAreaIngredients.value) {
-        cloneUlItem.querySelector("div > p").innerText = textAreaIngredients.value;
-        document.querySelector(".footer__title--ul").appendChild(cloneUlItem);
+    if (textAreaIngredients.value) {
+        ulLiElement.querySelector("div > p").innerText = textAreaIngredients.value;
+        document.querySelector(".footer__title--ul").appendChild(ulLiElement);
         textAreaIngredients.placeholder = "";
         textAreaIngredients.value = "";
         textAreaIngredients.style.border = "";
@@ -65,19 +81,17 @@ btnIngredients.addEventListener("click", () => {
     }
 });
 
-buttonSaveAndClose.addEventListener("click", (e) => {
-
-    if(inputName.value && inputDescription.value) {
+buttonSaveAndClose.addEventListener("click", () => {
+    if (inputName.value && inputDescription.value) {
         const olListItem = document.querySelectorAll(".olListItem");
         const ulListItem = document.querySelectorAll(".ulListItem");
 
-        e.preventDefault();
         recipe = {
             ...recipe,
             name: inputName.value,
             describe: inputDescription.value,
             instruction: [...olListItem].map(item => item.innerText),
-            ingredients: [...ulListItem].map(item => item.innerText),
+            ingredients: [...ulListItem].map(item => item.innerText)
         }
 
         //sprawdzenie czy localStorage nie jest puste, dodanie nowego przepisu
@@ -86,13 +100,16 @@ buttonSaveAndClose.addEventListener("click", (e) => {
         localStorage.setItem('recipeData', JSON.stringify(recipe));
         allOfRecipes.push(recipe);
         localStorage.setItem("recipeData", JSON.stringify(allOfRecipes));
-        //
+
         inputName.placeholder = "";
         inputName.style.border = "";
         inputDescription.placeholder = "";
         inputDescription.style.border = "";
         inputName.value = "";
         inputDescription.value = "";
+
+        window.frameElement.style.display = "none";
+        window.frameElement.nextElementSibling.style.display = "block";
     } else {
         inputName.placeholder = "Wpisz nazwę...";
         inputName.style.border = "1px solid red";
@@ -103,14 +120,3 @@ buttonSaveAndClose.addEventListener("click", (e) => {
 });
 //------------------------------------------------------------------------
 
-
-
-//const addRecipe= document.querySelector('.app');
-//fetch('/app.html')
-//.then(res=>res.text())
-//.then(data=>{
-//    addRecipe.innerHTML=data
-//    const parser = new DOMParser()
-//    const doc = parser.parseFromString(data, 'text/html')
-//    eval(doc.querySelector('script').textContent)
-//})

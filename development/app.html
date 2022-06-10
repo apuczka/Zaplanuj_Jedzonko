@@ -8,8 +8,8 @@
     <link rel="import" href="recipes.html">
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body class="body--app">
 <header class="header--app">
@@ -35,11 +35,72 @@
             Plany<i class="fa-solid fa-angle-right"></i>
         </div>
     </div>
+
     <div class="main__main--section">
         <div class="main--section" id="desktop">
+
+            <section class="main__section__startMessage">
+                <h1 class="main__section__startMessage__header">Witaj</h1>
+                <p class="main__section__startMessage__paragraph1">wygląda na to, że jesteś tutaj<br> pierwszy raz!</br></p>
+                <form class="main__section__startMessage__form" id="startMessage-form" name="startmessage-username">
+                    <input class="main__section__startMessage__form_input" type="text" id="startMessage-form-username"
+                        placeholder="tutaj wpisz jak masz na imie">
+                </form>
+                <button class="main__section__startMessage__button" id="startMessage">Gotowe!</button>
+                <p class="main__section__startMessage__paragraph2">Podaj nam swoje imię, a my zorganizujemy<br>dla Ciebie naszą
+                    aplikację :)</br>
+                </p>
+            </section>
+
+
+
+
+
             <!-- to jest sekcja Pulpit -->
+            <iframe class="iframe--schedules" src="schedules.html" seamless></iframe>
             <iframe class="iframe--recipe" src="recipes.html" seamless ></iframe>
+            <!--            <iframe class="iframe&#45;&#45;schedules" src="schedules.html" seamless ></iframe>-->
             <div class="main__content">
+                <div class="temporary">
+                    <div class="main--section--widget">
+                        <div class="main--section--widget--add">
+                            <div class="widget--add widget-add-recipy">
+                                <div class="widget--href">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <span>dodaj przepis</span>
+                            </div>
+                            <div class="widget--add widget-add-plan">
+                                <div class="widget--href">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <span>dodaj plan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main--section--widget--notyfication">
+                        <div class="widget widget--info">
+                            <span>
+                                <i class="fa-solid fa-circle-info"></i>
+                                <p class="numberRecipes"> Masz już 99 przepisów, nieźle!</p>
+                            </span>
+                            <i class="fa-solid fa-square-xmark"></i>
+                        </div>
+                        <div class="widget widget--remind">
+                            <span>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <p> Pamiętaj, aby dodać plan!</p>
+                            </span>
+                            <i class="fa-solid fa-square-xmark"></i>
+                        </div>
+                        <div class="widget widget--check">
+                            <span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p> Świetnie, że jesteś! Udanego planowania i smacznego! :)</p>
+                            </span>
+                            <i class="fa-solid fa-square-xmark"></i></div>
+                    </div>
+                </div>
             <div class="temporary">
             <div class="main--section--widget">
                 <div class="main--section--widget--add">
@@ -187,10 +248,122 @@
         </div>
         <div class="main--section" id="plans">
             <!-- to jest sekcja Plans -->
+            <div class="main--section__container">
+                <div class="main--section--new">
+                    <h1>LISTA PLANÓW</h1>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <hr>
+                <table  border="1" rules="rows" frame="void" class="main--section__table--new--plan schedules">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAZWA</th>
+                        <th>OPIS</th>
+                        <th>TYDZIEŃ</th>
+                        <th>AKCJE</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>
+                            Plan jarski na bezmięsny tydzien
+                        </td>
+                        <td>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                        </td>
+                        <td>
+                            46
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+
+                        <td>
+                            Plan jarski na bezmięsny tydzien
+                        </td>
+                        <td>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                        </td>
+                        <td>
+                            33
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+
+                        <td>
+                            Plan jarski na bezmięsny tydzien
+                        </td>
+                        <td>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                        </td>
+                        <td>
+                            12
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+
+                        <td>
+                            Plan jarski na bezmięsny tydzien
+                        </td>
+                        <td>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                        </td>
+                        <td>
+                            52
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+
+                        <td>
+                            Plan jarski na bezmięsny tydzien
+                        </td>
+                        <td>
+                            Pojęcie kuchnia wegetariańska określa pożywienhie, które ani nie zawiera mięsa, ani nie zostało przygotowane na bazie pochodzącej z mięsa (np. na rosole drobiowym). Laktoowowegetarianie (najczęściej spotykany typ wegetarian w zachodnim świecie) spożywają nabiał, laktowegetarianie wykluczają jaja, ale nie inne produkty nabiałowe.
+                        </td>
+                        <td>
+                            52
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
         </div>
     </div>
 </main>
 
-    <script src="./js/app.js"></script>
-  </body>
+<script src="./js/app.js"></script>
+</body>
 </html>
+

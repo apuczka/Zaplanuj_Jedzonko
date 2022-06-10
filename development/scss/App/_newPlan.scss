@@ -1,0 +1,77 @@
+.main--section__container--plan {
+  color: $mainHeader_and_colorTextInColumns;
+  background: $backgroundScreens;
+  height: 100vh;
+  //width: 90%;
+  border: 2px dotted #A1A194;
+
+}
+
+
+.main--section--new {
+  display: flex;
+  justify-content: space-between;
+  color: $buttons_and_favoritism_and_screenHeaders;
+  margin: 2rem 1.5rem 0 2rem;
+}
+.button--new--plan {
+  background: $buttons_and_favoritism_and_screenHeaders;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-family: $fontOpenSans;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.form--new--plan {
+  margin: 0 4rem 0 3rem;
+  font-size: 1.5rem;
+}
+
+.form--new--plan label {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.form--new--plan label:last-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form--new--plan textarea {
+  margin: 0 0 0 60px;
+  width: 80%;
+  resize: none;
+}
+.form--new--plan input {
+  margin: 0 0 0 40px;
+  width: 3rem;
+}
+
+
+
+select {
+  width: 100%;
+}
+
+.main--section__table--new--plan {
+  border-color: $tableTrColor_and_iconColorFunc;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  font-family: $fontOpenSans;
+  margin: 1.5rem 4rem 0 3rem;
+}
+.main--section__table--new--plan td {
+  padding: 7px;
+}
+.main--section__table--new--plan thead {
+  font-size: 1.5rem;
+}
+select {
+  font-family: $fontOpenSans;
+  border: 1px solid $tableTrColor_and_iconColorFunc;
+  border-radius: 5px;
+  padding: 5px;
+
+}
